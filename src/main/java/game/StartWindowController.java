@@ -24,6 +24,7 @@ public class StartWindowController {
         Parent gameWindowFxml= FXMLLoader.load(getClass().getResource("GameWindow.fxml"));
         Stage gameWindow = (Stage)((Node)event.getSource()).getScene().getWindow();
         Scene gameScene = new Scene(gameWindowFxml);
+        //gameScene.getStylesheets().add(getClass().getResource("gameWindowStylesheet.css").toExternalForm());
         gameWindow.setScene(gameScene);
         gameWindow.show();
 

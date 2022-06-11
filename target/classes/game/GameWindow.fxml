@@ -6,31 +6,29 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.GameWindowController">
+
+<Pane prefHeight="400.0" prefWidth="600.0" stylesheets="@gameWindowStylesheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.GameWindowController">
    <children>
-      <Text fx:id="winnerText" layoutX="159.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chi vince?" wrappingWidth="296.13671875">
+      <Text fx:id="winnerText" layoutX="83.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chi vince?" wrappingWidth="608.13671875">
          <font>
             <Font size="24.0" />
          </font>
       </Text>
 
-      <ImageView fitHeight="160.0" fitWidth="156.0" layoutX="45.0" layoutY="87.0" onMouseClicked="#rockIsClicked" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="rockImageView" fitHeight="226.0" fitWidth="221.0" layoutX="14.0" layoutY="38.0" onMouseClicked="#rockIsClicked" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../images/rock.jpg" />
+            <Image url="@../images/rock.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="160.0" fitWidth="148.0" layoutX="231.0" layoutY="87.0" onMouseClicked="#paperIsClicked" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="paperImageView" fitHeight="207.0" fitWidth="209.0" layoutX="231.0" layoutY="40.0" onMouseClicked="#paperIsClicked" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../images/paper.jpg" />
+            <Image url="@../images/paper.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="160.0" fitWidth="172.0" layoutX="412.0" layoutY="87.0" onMouseClicked="#scissorIsClicked" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="scissorImageView" fitHeight="200.0" fitWidth="142.0" layoutX="412.0" layoutY="47.0" onMouseClicked="#scissorIsClicked" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../images/scissor.jpg" />
+            <Image url="@../images/scissor.png" />
          </image>
       </ImageView>
    </children>
-<!--   <stylesheets>-->
-<!--      <URL value="@stylesheet.css"/>-->
-<!--   </stylesheets>-->
 </Pane>

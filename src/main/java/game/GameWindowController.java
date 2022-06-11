@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
@@ -13,8 +14,11 @@ import java.io.IOException;
 
 public class GameWindowController {
 
-    @FXML
-    private Text winnerText;
+    @FXML private Text winnerText;
+    @FXML private ImageView rockImageView;
+    @FXML private ImageView paperImageView;
+    @FXML private ImageView scissorImageView;
+
     private Game game;
     private Player user;
     private Player machine;
@@ -115,7 +119,7 @@ public class GameWindowController {
 
         if(machine.getVictories() == 3)
         {
-            switchToMachineWonWindow();
+           switchToMachineWonWindow();
         }
     }
 
@@ -140,6 +144,8 @@ public class GameWindowController {
         machineWonWindow.show();
 
     }
+
+
 
 
 
